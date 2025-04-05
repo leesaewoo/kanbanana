@@ -2,8 +2,8 @@ plugins {
     java
     id("org.springframework.boot") version "3.4.3"
     id("io.spring.dependency-management") version "1.1.7"
-    id("org.jetbrains.kotlin.jvm") version "1.8.0"  // Kotlin 플러그인 추가
-    id("org.jetbrains.kotlin.plugin.spring") version "1.8.0"  // Spring 관련 Kotlin 플러그인 추가
+    id("org.jetbrains.kotlin.jvm") version "1.8.0"
+    id("org.jetbrains.kotlin.plugin.spring") version "1.8.0"
 }
 
 group = "com.saewoo"
