@@ -1,6 +1,6 @@
 package com.saewoo.user.repository;
 
-import com.saewoo.common.domain.user.User;
+import com.saewoo.common.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

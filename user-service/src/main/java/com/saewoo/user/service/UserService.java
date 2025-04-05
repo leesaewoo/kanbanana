@@ -1,8 +1,9 @@
 package com.saewoo.user.service;
 
-import com.saewoo.user.dto.UserDto;
+import com.saewoo.common.dto.UserDto;
+import org.springframework.http.ResponseEntity;
 
 public interface UserService {
 
-    UserDto getUserByUsername(String username);
+    ResponseEntity<?> createUser(UserDto userDto);
 }

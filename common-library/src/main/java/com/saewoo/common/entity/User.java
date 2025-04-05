@@ -1,5 +1,6 @@
-package com.saewoo.common.domain.user;
+package com.saewoo.common.entity;
 
+import com.saewoo.common.enums.Status;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EntityListeners;

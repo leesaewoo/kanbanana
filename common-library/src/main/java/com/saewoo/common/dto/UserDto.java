@@ -1,14 +1,18 @@
-package com.saewoo.user.dto;
+package com.saewoo.common.dto;
 
-import com.saewoo.common.domain.user.Status;
-import lombok.Getter;
-import lombok.Setter;
+import com.saewoo.common.enums.Status;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
-@Getter
-@Setter
+@Builder @Data
+@NoArgsConstructor @AllArgsConstructor
 public class UserDto {
+
+    private long id;
 
     private String username;
 

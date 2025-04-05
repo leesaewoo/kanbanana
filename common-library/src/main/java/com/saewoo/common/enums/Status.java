@@ -1,4 +1,4 @@
-package com.saewoo.common.domain.user;
+package com.saewoo.common.enums;
 
 public enum Status {
     ACTIVE,

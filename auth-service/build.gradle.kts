@@ -2,8 +2,8 @@ plugins {
 	java
 	id("org.springframework.boot") version "3.4.3"
 	id("io.spring.dependency-management") version "1.1.7"
-	id("org.jetbrains.kotlin.jvm") version "1.8.0"  // Kotlin 플러그인 추가
-	id("org.jetbrains.kotlin.plugin.spring") version "1.8.0"  // Spring 관련 Kotlin 플러그인 추가
+	id("org.jetbrains.kotlin.jvm") version "1.8.0"
+	id("org.jetbrains.kotlin.plugin.spring") version "1.8.0"
 }
 
 group = "com.saewoo"
@@ -33,6 +33,10 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-security")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
+	implementation("io.jsonwebtoken:jjwt-api:0.11.5")
+	runtimeOnly("io.jsonwebtoken:jjwt-impl:0.11.5")
+	runtimeOnly("io.jsonwebtoken:jjwt-jackson:0.11.5") // Jackson 사용 시
 	compileOnly("org.projectlombok:lombok")
 	runtimeOnly("com.mysql:mysql-connector-j")
 	annotationProcessor("org.projectlombok:lombok")
